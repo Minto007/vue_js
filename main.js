@@ -1,6 +1,7 @@
 var app = new Vue({
   el: '#app',
-  data: {
-    message: 'Hello Vue.js'
+  methods: {
+    handleClick: function(event) {
+      alert(event.target) // [object HTMLButtonElement]
   }
-})
+}})
