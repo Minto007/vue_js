@@ -1,6 +1,11 @@
 var app = new Vue({
   el: '#app',
   data: {
-    show: true
+    count: 0
+  },
+  methods: {
+    increment: function() {
+      this.count+=1
+    },
   }
 })
